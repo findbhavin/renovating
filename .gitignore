@@ -1,0 +1,11 @@
+# Generated output images (re-created by running kitchen_design.py)
+outputs/
+
+# Python byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
