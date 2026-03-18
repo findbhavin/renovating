@@ -1,0 +1,93 @@
+{
+  "apartment": {
+    "number": "304",
+    "carpet_area_sqm": 49.30,
+    "super_built_up_area_sqm": 72.0,
+    "type": "2BHK"
+  },
+  "wall_thickness_m": 0.15,
+  "rooms": {
+    "bedroom_2": {
+      "label": "BEDROOM 2",
+      "width_m": 2.75,
+      "depth_m": 3.65,
+      "type": "bedroom"
+    },
+    "bedroom_1": {
+      "label": "BEDROOM 1",
+      "width_m": 2.75,
+      "depth_m": 3.35,
+      "type": "bedroom"
+    },
+    "kitchen": {
+      "label": "KITCHEN",
+      "width_m": 2.75,
+      "depth_m": 3.40,
+      "type": "kitchen",
+      "note": "2 walls on left side of kitchen entrance and 2 parallel interior walls to be removed for open kitchen"
+    },
+    "dining": {
+      "label": "DINING",
+      "width_m": 2.865,
+      "depth_m": 2.715,
+      "type": "dining"
+    },
+    "living": {
+      "label": "LIVING",
+      "width_m": 4.50,
+      "depth_m": 2.75,
+      "type": "living"
+    },
+    "toilet_1": {
+      "label": "TOILET",
+      "width_m": 2.40,
+      "depth_m": 1.40,
+      "type": "toilet"
+    },
+    "toilet_2": {
+      "label": "TOILET",
+      "width_m": 2.10,
+      "depth_m": 1.40,
+      "type": "toilet"
+    },
+    "balcony_1": {
+      "label": "BALCONY",
+      "width_m": 2.75,
+      "depth_m": 1.05,
+      "type": "balcony"
+    },
+    "balcony_2": {
+      "label": "BALCONY",
+      "width_m": 2.75,
+      "depth_m": 1.05,
+      "type": "balcony"
+    },
+    "dry_balcony": {
+      "label": "DRY BALCONY",
+      "width_m": 1.50,
+      "depth_m": 0.85,
+      "type": "dry_balcony"
+    },
+    "balcony_east": {
+      "label": "BALCONY",
+      "width_m": 1.20,
+      "depth_m": 2.75,
+      "type": "balcony"
+    }
+  },
+  "open_kitchen_walls_to_remove": {
+    "description": "Walls to remove for open kitchen design",
+    "entry_walls": {
+      "count": 2,
+      "location": "Left side of kitchen entrance (when entering from dining/living area)",
+      "wall_1": "Left segment of the wall between kitchen and dining (west side of opening)",
+      "wall_2": "Outer left return wall at the kitchen entrance"
+    },
+    "parallel_interior_walls": {
+      "count": 2,
+      "location": "Inside kitchen, parallel to the entry walls",
+      "wall_3": "Interior west wall segment inside kitchen parallel to entry wall 1",
+      "wall_4": "Interior partition wall inside kitchen parallel to entry wall 2"
+    }
+  }
+}
