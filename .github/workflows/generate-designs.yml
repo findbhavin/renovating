@@ -1,0 +1,40 @@
+name: Generate and Share Floor-Plan Designs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'kitchen_design.py'
+      - 'inputs/dimensions.json'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate floor-plan designs
+        run: python3 kitchen_design.py
+        env:
+          MPLBACKEND: Agg
+
+      - name: Upload generated designs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: floor-plan-designs
+          path: outputs/
+          if-no-files-found: error
